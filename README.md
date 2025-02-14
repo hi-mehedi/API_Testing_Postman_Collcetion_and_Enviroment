@@ -37,10 +37,22 @@ git clone https://github.com/hi-mehedi/API_Testing_Postman_Collcetion_and_Enviro
 2. **Run with Postman Environment:**
    - Set **Baseurl** in the Postman environment.
    - Use `Random_Date_Generator.postman_environment.json`.
-3. **Run with Newman:**
-   ```sh
-   newman run Random_Date_Generator.postman_collection.json -e Random_Date_Generator.postman_environment.json
-   ```
+
+# Generating an HTML Report using Newman with htmlextra
+
+To generate a detailed HTML report using **htmlextra**, install the reporter package:
+```sh
+npm install -g newman-reporter-htmlextra
+```
+
+Then, execute the following command to run the collection and generate an enhanced HTML report:
+```sh
+newman run Random_Date_Generator.postman_collection.json -e Random_Date_Generator.postman_environment.json -r htmlextra --reporter-htmlextra-export report.html
+```
+
+This will create a `report.html` file, which provides an interactive and visually enhanced view of the test results.
+
+
 
 ## API Implementation
 
@@ -199,7 +211,16 @@ Updates an existing booking using authentication.
   },
   "additionalneeds": "Lunch"
 }
+
+
 ```
+## Newman Report Summary
+![image](https://github.com/user-attachments/assets/a1477f0e-b921-4cb9-8949-03e6cb2c9fc5)
+![image](https://github.com/user-attachments/assets/34d99d29-548e-4cd2-ba02-82810792619c)
+![image](https://github.com/user-attachments/assets/d9020261-5377-4830-afc4-109de00e909b)
+![image](https://github.com/user-attachments/assets/1cf0c0db-e246-4d4a-85b6-ae8a85e54277)
+![image](https://github.com/user-attachments/assets/a6672bac-0e61-48f7-b9eb-d5e224b28bcc)
+
 
 ## Author
 **Mehedi Hasan Soumik**
