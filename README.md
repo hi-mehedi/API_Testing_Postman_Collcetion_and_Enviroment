@@ -25,7 +25,7 @@ For a detailed API reference, visit: [Postman API Documentation](https://documen
 
 ## How to Clone the Project
 ```sh
-git clone https://github.com/your-repo/random-date-generator-api-tests.git
+git clone https://github.com/hi-mehedi/API_Testing_Postman_Collcetion_and_Enviroment.git
 cd random-date-generator-api-tests
 ```
 
