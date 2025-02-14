@@ -56,9 +56,15 @@ This will create a `report.html` file, which provides an interactive and visuall
 
 ## API Implementation
 
+Baseurl:https://restful-booker.herokuapp.com
+
 ### 1. Create Booking (POST /booking/)
 This endpoint generates a new booking with randomized user details.
 
+**Request URL:**
+```
+{{Baseurl}}/booking/
+```
 **Pre-request Script:**
 ```javascript
 var firstname = pm.variables.replaceIn('{{$randomFirstName}}');
